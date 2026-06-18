@@ -70,10 +70,17 @@ function ShopContent() {
   return (
     <>
       {/* Header */}
-      <div className="bg-surface border-b border-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-10 text-center">
-          <h1 className="text-[clamp(1.5rem,3.5vw,2.2rem)] font-light mb-1" style={{ fontFamily: "var(--font-display)" }}>{pageTitle}</h1>
-          <p className="text-[13px] text-muted">{products.length} {products.length === 1 ? "product" : "products"}</p>
+      <div className="border-b border-[#1A1A1A]">
+        <div className="max-w-[1400px] mx-auto px-5 sm:px-8 py-10 sm:py-14 text-center">
+          <h1 className="text-[clamp(2rem,5vw,3rem)] font-black uppercase tracking-tight mb-4" style={{ fontFamily: "var(--font-display)" }}>{pageTitle}</h1>
+          {/* Category tabs */}
+          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mt-4">
+            <button onClick={() => setSelectedCategory("")} className={`text-[11px] tracking-[0.15em] uppercase font-bold px-4 py-2 border transition-colors cursor-pointer ${!selectedCategory ? "bg-[#F5C518] text-black border-[#F5C518]" : "border-[#2A2A2A] text-white/40 hover:text-white hover:border-white/30"}`}>All</button>
+            {sampleCategories.map((c) => (
+              <button key={c.id} onClick={() => setSelectedCategory(c.slug)} className={`text-[11px] tracking-[0.15em] uppercase font-bold px-4 py-2 border transition-colors cursor-pointer ${selectedCategory === c.slug ? "bg-[#F5C518] text-black border-[#F5C518]" : "border-[#2A2A2A] text-white/40 hover:text-white hover:border-white/30"}`}>{c.name}</button>
+            ))}
+          </div>
+          <p className="text-[13px] text-white/30 mt-4">{products.length} {products.length === 1 ? "product" : "products"}</p>
         </div>
       </div>
 

@@ -6,21 +6,9 @@ import { usePathname } from "next/navigation";
 import { useCartStore } from "@/store/cart";
 
 const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/shop?filter=new", label: "New Arrivals" },
-  { href: "/shop", label: "Shop All" },
-  { href: "/shop?category=menswear", label: "Menswear" },
-  { href: "/shop?category=womenswear", label: "Womenswear" },
-  { href: "/shop?category=accessories", label: "Accessories" },
-  { href: "/shop?category=footwear", label: "Footwear" },
-];
-
-const desktopLinks = [
-  { href: "/", label: "Home" },
+  { href: "/about", label: "About" },
   { href: "/shop", label: "Shop" },
-  { href: "/shop?category=menswear", label: "Men" },
-  { href: "/shop?category=womenswear", label: "Women" },
-  { href: "/shop?category=accessories", label: "Accessories" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -47,25 +35,28 @@ export default function Navbar() {
       <header className="sticky top-0 z-50 bg-[#0A0A0A] border-b border-[#1A1A1A]">
         <div className="max-w-[1400px] mx-auto px-5 sm:px-8">
           <div className="flex items-center justify-between h-[56px]">
+            {/* Left — nav links */}
             <div className="flex items-center gap-7 flex-1">
               <button onClick={() => setMobileOpen(true)} className="lg:hidden cursor-pointer" aria-label="Menu">
                 <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#fff" strokeWidth="1.5"><path d="M4 7h16M4 12h12" strokeLinecap="round"/></svg>
               </button>
-              <nav className="hidden lg:flex items-center gap-6">
-                {desktopLinks.map((link) => (
+              <nav className="hidden lg:flex items-center gap-7">
+                {navLinks.map((link) => (
                   <Link key={link.label} href={link.href}
-                    className={`text-[11px] tracking-[0.14em] uppercase font-medium transition-colors ${pathname === link.href ? "text-[#F5C518]" : "text-white/50 hover:text-white"}`}
+                    className={`text-[11px] tracking-[0.14em] uppercase font-medium transition-colors ${pathname === link.href || (link.href === "/shop" && pathname.startsWith("/shop")) ? "text-[#F5C518]" : "text-white/50 hover:text-white"}`}
                   >{link.label}</Link>
                 ))}
               </nav>
             </div>
 
+            {/* Center logo */}
             <Link href="/" className="absolute left-1/2 -translate-x-1/2">
               <span className="text-[18px] sm:text-[20px] tracking-[0.25em] uppercase font-black select-none text-white">
                 ARLO<span className="text-[#F5C518]">TECH</span>
               </span>
             </Link>
 
+            {/* Right — icons */}
             <div className="flex items-center gap-1 flex-1 justify-end">
               <button onClick={() => setSearchOpen(!searchOpen)} className="p-2 text-white/40 hover:text-white transition-colors cursor-pointer" aria-label="Search">
                 <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35" strokeLinecap="round"/></svg>
@@ -81,6 +72,7 @@ export default function Navbar() {
           </div>
         </div>
 
+        {/* Search */}
         {searchOpen && (
           <div className="border-t border-[#1A1A1A]">
             <form onSubmit={handleSearch} className="max-w-[1400px] mx-auto px-5 sm:px-8 py-3 flex items-center gap-3">
@@ -91,35 +83,27 @@ export default function Navbar() {
         )}
       </header>
 
-      {/* Full-screen mobile nav — Berluti style */}
+      {/* Full-screen mobile nav */}
       {mobileOpen && (
         <div className="fixed inset-0 z-[60] lg:hidden bg-[#0A0A0A] flex flex-col">
-          {/* Close button top-right */}
           <div className="flex items-center justify-end px-6 h-[56px] shrink-0">
             <button onClick={() => setMobileOpen(false)} className="cursor-pointer text-white/50 hover:text-white" aria-label="Close">
               <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.3"><path d="M18 6L6 18M6 6l12 12" strokeLinecap="round"/></svg>
             </button>
           </div>
 
-          {/* Main nav links — large serif text */}
           <nav className="flex-1 px-8 pt-4 overflow-y-auto">
             {navLinks.map((link) => (
-              <Link
-                key={link.label}
-                href={link.href}
-                className="block py-3 text-[26px] sm:text-[32px] text-white font-light tracking-tight hover:text-[#F5C518] transition-colors"
+              <Link key={link.label} href={link.href}
+                className="block py-3.5 text-[28px] sm:text-[34px] text-white font-light tracking-tight hover:text-[#F5C518] transition-colors"
                 style={{ fontFamily: "var(--font-display)" }}
-              >
-                {link.label}
-              </Link>
+              >{link.label}</Link>
             ))}
           </nav>
 
-          {/* Bottom secondary links */}
           <div className="px-8 pb-10 pt-6 border-t border-[#1A1A1A] space-y-3 shrink-0">
             <Link href="/auth/login" className="block text-[15px] text-white/40 hover:text-white transition-colors">Sign in / Register</Link>
             <Link href="/account/wishlist" className="block text-[15px] text-white/40 hover:text-white transition-colors">Wish List</Link>
-            <Link href="/contact" className="block text-[15px] text-white/40 hover:text-white transition-colors">Contact Us</Link>
           </div>
         </div>
       )}
