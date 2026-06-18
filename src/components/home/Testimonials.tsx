@@ -8,31 +8,29 @@ export default function Testimonials() {
   const t = testimonials[active];
 
   return (
-    <section className="py-20 sm:py-28 bg-[#1A1714]">
+    <section className="py-24 sm:py-32 bg-black">
       <div className="max-w-3xl mx-auto px-6 sm:px-8 text-center">
-        <p className="text-[11px] tracking-[0.4em] uppercase text-accent-light font-semibold mb-10">
-          Community
-        </p>
+        <p className="text-white/25 text-[10px] tracking-[0.5em] uppercase mb-12">What People Say</p>
 
         <blockquote
-          className="text-[clamp(1.1rem,2.5vw,1.5rem)] leading-relaxed text-white/70 font-light mb-8"
+          className="text-[clamp(1rem,2.5vw,1.4rem)] leading-[1.6] text-white/60 font-light"
           style={{ fontFamily: "var(--font-display)" }}
         >
           &ldquo;{t.comment}&rdquo;
         </blockquote>
 
-        <div className="mb-10">
-          <p className="text-white text-sm font-medium">{t.name}</p>
-          <p className="text-white/30 text-[12px]">{t.location}</p>
+        <div className="mt-8 mb-12">
+          <p className="text-white text-[13px] font-medium">{t.name}</p>
+          <p className="text-white/25 text-[12px] mt-0.5">{t.location}</p>
         </div>
 
-        <div className="flex justify-center gap-2">
+        <div className="flex justify-center gap-4">
           {testimonials.map((_, i) => (
             <button
               key={i}
               onClick={() => setActive(i)}
-              className={`h-[2px] rounded-full transition-all duration-500 cursor-pointer ${
-                i === active ? "w-8 bg-accent-light" : "w-3 bg-white/15"
+              className={`w-1.5 h-1.5 rounded-full transition-all duration-500 cursor-pointer ${
+                i === active ? "bg-white" : "bg-white/15 hover:bg-white/30"
               }`}
               aria-label={`Testimonial ${i + 1}`}
             />

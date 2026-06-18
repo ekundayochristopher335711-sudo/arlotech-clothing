@@ -6,23 +6,17 @@ import { useState } from "react";
 const links = {
   shop: [
     { label: "New Arrivals", href: "/shop?filter=new" },
-    { label: "Bestsellers", href: "/shop?filter=bestseller" },
     { label: "Menswear", href: "/shop?category=menswear" },
     { label: "Womenswear", href: "/shop?category=womenswear" },
     { label: "Accessories", href: "/shop?category=accessories" },
+    { label: "View All", href: "/shop" },
   ],
-  company: [
-    { label: "Our Story", href: "/about" },
-    { label: "Sustainability", href: "/sustainability" },
-    { label: "Careers", href: "/careers" },
-    { label: "Press", href: "/press" },
-  ],
-  help: [
-    { label: "Contact Us", href: "/contact" },
+  info: [
+    { label: "About Us", href: "/about" },
+    { label: "Contact", href: "/contact" },
     { label: "Shipping & Returns", href: "/shipping" },
     { label: "Size Guide", href: "/size-guide" },
     { label: "FAQ", href: "/faq" },
-    { label: "Track Order", href: "/account/orders" },
   ],
 };
 
@@ -36,80 +30,70 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#111] text-white/60">
+    <footer className="border-t border-[#eee]">
       {/* Newsletter */}
-      <div className="border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-14 flex flex-col lg:flex-row items-center justify-between gap-6">
-          <div className="text-center lg:text-left">
-            <h3 className="text-white text-base tracking-wide font-medium mb-1">Join the Community</h3>
-            <p className="text-[13px] text-white/40">Early access, exclusive offers, and style notes — once a week.</p>
+      <div className="border-b border-[#eee]">
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 py-14 sm:py-16 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+          <div>
+            <h3 className="text-[13px] tracking-[0.15em] uppercase font-medium mb-1">Stay in the loop</h3>
+            <p className="text-[13px] text-[#999]">New drops, stories, and exclusive access. No spam.</p>
           </div>
           <form onSubmit={subscribe} className="flex w-full max-w-md">
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Your email address"
-              required
-              className="flex-1 px-4 py-3 bg-white/5 border border-white/10 text-white text-sm placeholder:text-white/25 focus:border-white/30 focus:outline-none transition-colors"
-            />
-            <button type="submit" className="px-6 py-3 bg-accent text-white text-[11px] tracking-widest uppercase font-semibold hover:bg-accent-hover transition-colors cursor-pointer whitespace-nowrap">
-              {done ? "Done!" : "Subscribe"}
+            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email address" required
+              className="flex-1 px-0 py-3 bg-transparent border-b border-[#ddd] text-[13px] placeholder:text-[#bbb] focus:outline-none focus:border-black transition-colors" />
+            <button type="submit" className="ml-4 text-[11px] tracking-[0.2em] uppercase font-medium text-black hover:text-[#666] transition-colors cursor-pointer whitespace-nowrap">
+              {done ? "Done" : "Subscribe"}
             </button>
           </form>
         </div>
       </div>
 
       {/* Links */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-14">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
+      <div className="max-w-[1400px] mx-auto px-6 sm:px-8 py-12 sm:py-14">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 lg:gap-16">
           <div className="col-span-2 md:col-span-1">
-            <Link href="/" className="inline-block mb-4">
-              <span className="text-lg tracking-[0.2em] uppercase text-white font-extralight">
-                <span className="font-semibold">Arlo</span>tech
+            <Link href="/" className="inline-block mb-5">
+              <span className="text-[15px] tracking-[0.3em] uppercase" style={{ fontWeight: 300 }}>
+                <span style={{ fontWeight: 700 }}>ARLO</span>TECH
               </span>
             </Link>
-            <p className="text-[13px] leading-relaxed text-white/30 mb-5 max-w-[240px]">
-              Born in Lagos. Worn everywhere. Premium fashion for those who value craft and confidence.
+            <p className="text-[13px] leading-relaxed text-[#999] max-w-[220px]">
+              Born in Lagos. Worn everywhere.
             </p>
-            <div className="flex gap-3">
-              {/* Instagram */}
-              <a href="#" className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-white/40 hover:text-white hover:border-white/25 hover:bg-white/10 transition-all" aria-label="Instagram">
-                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-              </a>
-              {/* X / Twitter */}
-              <a href="#" className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-white/40 hover:text-white hover:border-white/25 hover:bg-white/10 transition-all" aria-label="Twitter">
-                <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-              </a>
-              {/* TikTok */}
-              <a href="#" className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-white/40 hover:text-white hover:border-white/25 hover:bg-white/10 transition-all" aria-label="TikTok">
-                <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
-              </a>
-            </div>
           </div>
 
-          {Object.entries(links).map(([title, items]) => (
-            <div key={title}>
-              <h4 className="text-white text-[11px] tracking-[0.2em] uppercase font-semibold mb-4">{title}</h4>
-              <ul className="space-y-2.5">
-                {items.map((link) => (
-                  <li key={link.href}>
-                    <Link href={link.href} className="text-[13px] hover:text-white transition-colors">{link.label}</Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          <div>
+            <h4 className="text-[11px] tracking-[0.2em] uppercase font-medium mb-5">Shop</h4>
+            <ul className="space-y-3">
+              {links.shop.map((l) => <li key={l.href}><Link href={l.href} className="text-[13px] text-[#888] hover:text-black transition-colors">{l.label}</Link></li>)}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-[11px] tracking-[0.2em] uppercase font-medium mb-5">Info</h4>
+            <ul className="space-y-3">
+              {links.info.map((l) => <li key={l.href}><Link href={l.href} className="text-[13px] text-[#888] hover:text-black transition-colors">{l.label}</Link></li>)}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-[11px] tracking-[0.2em] uppercase font-medium mb-5">Follow</h4>
+            <ul className="space-y-3">
+              <li><a href="#" className="text-[13px] text-[#888] hover:text-black transition-colors">Instagram</a></li>
+              <li><a href="#" className="text-[13px] text-[#888] hover:text-black transition-colors">Twitter / X</a></li>
+              <li><a href="#" className="text-[13px] text-[#888] hover:text-black transition-colors">TikTok</a></li>
+            </ul>
+          </div>
         </div>
       </div>
 
       {/* Bottom */}
-      <div className="border-t border-white/8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-[11px] text-white/25">&copy; {new Date().getFullYear()} Arlotech Clothing. All rights reserved.</p>
-          <div className="flex gap-5 text-[11px] text-white/25">
-            <Link href="/privacy" className="hover:text-white/50 transition-colors">Privacy</Link>
-            <Link href="/terms" className="hover:text-white/50 transition-colors">Terms</Link>
+      <div className="border-t border-[#eee]">
+        <div className="max-w-[1400px] mx-auto px-6 sm:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <p className="text-[11px] text-[#bbb]">&copy; {new Date().getFullYear()} Arlotech Clothing</p>
+          <div className="flex gap-5 text-[11px] text-[#bbb]">
+            <Link href="/privacy" className="hover:text-black transition-colors">Privacy</Link>
+            <Link href="/terms" className="hover:text-black transition-colors">Terms</Link>
           </div>
         </div>
       </div>

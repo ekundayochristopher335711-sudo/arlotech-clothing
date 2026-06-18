@@ -1,34 +1,20 @@
 "use client";
 
-import Link from "next/link";
-
 export default function BrandEthos() {
   return (
-    <section className="py-20 sm:py-28">
-      <div className="max-w-4xl mx-auto px-6 sm:px-8 text-center">
-        <p className="text-[11px] tracking-[0.4em] uppercase text-accent font-semibold mb-6">
-          The Brand
-        </p>
+    <section className="py-24 sm:py-32">
+      <div className="max-w-3xl mx-auto px-6 sm:px-8 text-center">
         <h2
-          className="text-[clamp(1.6rem,4vw,2.8rem)] leading-[1.2] font-light mb-6"
+          className="text-[clamp(1.5rem,3.5vw,2.6rem)] leading-[1.25] font-light tracking-[-0.01em]"
           style={{ fontFamily: "var(--font-display)" }}
         >
-          We don&apos;t follow trends.{" "}
-          <span className="text-muted">
-            We create pieces for people who know exactly who they are.
-          </span>
+          We don&apos;t follow trends.
+          <br />
+          <span className="text-[#999]">We create for people who know who they are.</span>
         </h2>
-        <p className="text-muted text-[15px] leading-relaxed max-w-xl mx-auto mb-8">
-          Born in Lagos, designed for the world. Every Arlotech piece is crafted with intention —
-          premium fabrics, purposeful silhouettes, and the kind of quiet confidence that speaks louder than logos.
+        <p className="text-[#999] text-[14px] leading-relaxed max-w-md mx-auto mt-6">
+          Born in Lagos. Designed for the world. Premium fabrics, purposeful silhouettes, quiet confidence.
         </p>
-        <Link
-          href="/shop"
-          className="inline-flex items-center gap-3 text-foreground text-[12px] tracking-[0.2em] uppercase font-semibold group"
-        >
-          Discover the Collection
-          <span className="w-8 h-[1px] bg-foreground/30 group-hover:w-14 transition-all duration-500" />
-        </Link>
       </div>
     </section>
   );
