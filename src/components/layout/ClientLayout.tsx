@@ -5,6 +5,7 @@ import TopBar from "./TopBar";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import CartDrawer from "./CartDrawer";
+import WhatsAppButton from "./WhatsAppButton";
 
 export default function ClientLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -28,6 +29,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
       <main className="flex-1">{children}</main>
       <Footer />
       <CartDrawer />
+      <WhatsAppButton />
     </>
   );
 }
