@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { useCartStore } from "@/store/cart";
 
 const navLinks = [
+  { href: "/", label: "Home" },
   { href: "/shop?filter=new", label: "New Arrivals" },
   { href: "/shop", label: "Shop All" },
   { href: "/shop?category=menswear", label: "Menswear" },
@@ -15,6 +16,7 @@ const navLinks = [
 ];
 
 const desktopLinks = [
+  { href: "/", label: "Home" },
   { href: "/shop", label: "Shop" },
   { href: "/shop?category=menswear", label: "Men" },
   { href: "/shop?category=womenswear", label: "Women" },

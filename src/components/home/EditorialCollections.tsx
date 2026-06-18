@@ -6,7 +6,7 @@ import Link from "next/link";
 const collections = [
   { title: "T-Shirts", image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&q=85", href: "/shop?category=menswear" },
   { title: "Hoodies", image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800&q=85", href: "/shop?category=womenswear" },
-  { title: "Caps & Accessories", image: "https://images.unsplash.com/photo-1588850561407-ed78c334e67a?w=800&q=85", href: "/shop?category=accessories" },
+  { title: "Caps & Accessories", image: "https://images.unsplash.com/photo-1622445275463-afa2ab738c34?w=800&q=85", href: "/shop?category=accessories" },
 ];
 
 export default function EditorialCollections() {
