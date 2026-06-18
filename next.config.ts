@@ -2,6 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
+    // allow specific hostnames (older Next versions) as a fallback
+    domains: ["images.unsplash.com", "res.cloudinary.com", "images.pexels.com"],
     remotePatterns: [
       {
         protocol: "https",
