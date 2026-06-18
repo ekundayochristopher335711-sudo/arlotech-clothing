@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import ClientLayout from "@/components/layout/ClientLayout";
 
@@ -9,7 +9,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const playfair = Playfair_Display({
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   variable: "--font-display",
   display: "swap",
@@ -21,44 +21,21 @@ export const metadata: Metadata = {
     template: "%s | Arlotech Clothing",
   },
   description:
-    "Premium fashion brand offering luxury ready-to-wear clothing, accessories, and footwear. Handcrafted pieces designed to transcend seasons. Shop worldwide with free shipping over $150.",
-  keywords: [
-    "luxury fashion",
-    "premium clothing",
-    "designer wear",
-    "streetwear",
-    "menswear",
-    "womenswear",
-    "accessories",
-    "Arlotech",
-  ],
+    "Premium streetwear brand from Lagos, Nigeria. Bold designs influenced by Afrobeats, street culture, and the energy of the city. Shop worldwide.",
+  keywords: ["streetwear", "Nigerian fashion", "Lagos", "Arlotech", "clothing brand", "Afrobeats fashion"],
   openGraph: {
     type: "website",
     locale: "en_US",
     siteName: "Arlotech Clothing",
     title: "Arlotech Clothing | Fashion Without Limits",
-    description:
-      "Premium fashion brand offering luxury ready-to-wear clothing, accessories, and footwear.",
+    description: "Premium streetwear brand from Lagos, Nigeria.",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Arlotech Clothing | Fashion Without Limits",
-    description:
-      "Premium fashion brand offering luxury ready-to-wear clothing, accessories, and footwear.",
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
+  robots: { index: true, follow: true },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
       <body className="min-h-screen flex flex-col antialiased">
         <ClientLayout>{children}</ClientLayout>
       </body>
