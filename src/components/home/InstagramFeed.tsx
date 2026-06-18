@@ -13,22 +13,26 @@ const images = [
 
 export default function InstagramFeed() {
   return (
-    <section className="section-pad">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="text-center mb-8">
-          <p className="text-[11px] tracking-[0.3em] uppercase text-accent font-semibold mb-2">@arlotechclothing</p>
-          <h2 className="text-[clamp(1.4rem,3vw,2rem)] font-light" style={{ fontFamily: "var(--font-display)" }}>
-            Follow the Journey
-          </h2>
-        </div>
-        <div className="grid grid-cols-3 sm:grid-cols-6 gap-1.5 sm:gap-2">
-          {images.map((src, i) => (
-            <a key={i} href="#" className="group relative aspect-square overflow-hidden bg-surface">
-              <Image src={src} alt="" fill className="object-cover transition-transform duration-500 group-hover:scale-110" sizes="(max-width:640px) 33vw, 16vw" />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-colors" />
-            </a>
-          ))}
-        </div>
+    <section className="py-16 sm:py-20">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 text-center mb-10">
+        <p className="text-[11px] tracking-[0.4em] uppercase text-accent font-semibold mb-2">
+          @arlotechclothing
+        </p>
+        <h2
+          className="text-[clamp(1.4rem,3vw,2rem)] font-light"
+          style={{ fontFamily: "var(--font-display)" }}
+        >
+          Follow the Journey
+        </h2>
+      </div>
+      {/* Full-bleed grid */}
+      <div className="grid grid-cols-3 sm:grid-cols-6 gap-1">
+        {images.map((src, i) => (
+          <a key={i} href="#" className="group relative aspect-square overflow-hidden">
+            <Image src={src} alt="" fill className="object-cover transition-transform duration-700 group-hover:scale-110" sizes="(max-width:640px) 33vw, 16vw" />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500" />
+          </a>
+        ))}
       </div>
     </section>
   );

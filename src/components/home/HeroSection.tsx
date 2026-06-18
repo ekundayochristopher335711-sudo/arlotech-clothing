@@ -6,25 +6,19 @@ import Link from "next/link";
 
 const slides = [
   {
-    image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1920&q=85",
-    tag: "New Season",
-    heading: "Wear Your\nConfidence",
-    text: "Bold, intentional pieces designed for the modern individual. Made in Lagos, worn worldwide.",
+    image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1920&q=90",
+    heading: "Wear Your\nStory",
     cta: { label: "Shop Collection", href: "/shop" },
   },
   {
-    image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=1920&q=85",
-    tag: "New Arrivals",
-    heading: "Fresh\nDrops",
-    text: "Statement pieces that move with you — from boardrooms to rooftop nights. Just landed.",
-    cta: { label: "Shop New In", href: "/shop?filter=new" },
+    image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=1920&q=90",
+    heading: "New Season\nNow Live",
+    cta: { label: "Explore New In", href: "/shop?filter=new" },
   },
   {
-    image: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=1920&q=85",
-    tag: "Best Sellers",
-    heading: "Community\nFavourites",
-    text: "The pieces our people keep coming back for. See what everyone is wearing.",
-    cta: { label: "View Bestsellers", href: "/shop?filter=bestseller" },
+    image: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=1920&q=90",
+    heading: "Made in\nLagos",
+    cta: { label: "Our Story", href: "/shop" },
   },
 ];
 
@@ -34,43 +28,55 @@ export default function HeroSection() {
   const next = useCallback(() => setCurrent((p) => (p + 1) % slides.length), []);
 
   useEffect(() => { setReady(true); }, []);
-  useEffect(() => { const t = setInterval(next, 5500); return () => clearInterval(t); }, [next]);
+  useEffect(() => { const t = setInterval(next, 6000); return () => clearInterval(t); }, [next]);
 
   const s = slides[current];
 
   return (
-    <section className="relative h-[90vh] min-h-[520px] max-h-[820px] bg-[#1A1714] overflow-hidden">
+    <section className="relative h-[100svh] min-h-[600px] bg-[#1A1714] overflow-hidden">
       {slides.map((slide, i) => (
-        <div key={i} className={`absolute inset-0 transition-opacity duration-[1200ms] ${i === current ? "opacity-100" : "opacity-0"}`}>
-          <Image src={slide.image} alt="" fill className="object-cover" priority={i === 0} sizes="100vw" quality={85} />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/35 to-transparent" />
+        <div key={i} className={`absolute inset-0 transition-opacity duration-[1500ms] ease-in-out ${i === current ? "opacity-100" : "opacity-0"}`}>
+          <Image src={slide.image} alt="" fill className="object-cover scale-[1.03]" priority={i === 0} sizes="100vw" quality={90}
+            style={{ transition: "transform 8s ease-out", transform: i === current ? "scale(1.08)" : "scale(1.03)" }} />
+          <div className="absolute inset-0 bg-black/35" />
         </div>
       ))}
 
-      <div className="relative z-10 h-full max-w-7xl mx-auto px-4 sm:px-6 flex items-center">
-        <div className={`max-w-lg transition-all duration-700 ${ready ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
-          <p className="text-[11px] sm:text-xs tracking-[0.3em] uppercase text-accent-light font-semibold mb-4">
-            {s.tag}
-          </p>
-          <h1 className="text-[clamp(2.4rem,7vw,4.2rem)] leading-[1.05] text-white font-light whitespace-pre-line mb-5" style={{ fontFamily: "var(--font-display)" }}>
+      <div className="relative z-10 h-full max-w-7xl mx-auto px-6 sm:px-8 flex flex-col justify-end pb-16 sm:pb-20">
+        <div className={`transition-all duration-1000 ${ready ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+          <h1
+            className="text-[clamp(3rem,10vw,6.5rem)] leading-[0.95] text-white font-light whitespace-pre-line mb-8 tracking-tight"
+            style={{ fontFamily: "var(--font-display)" }}
+          >
             {s.heading}
           </h1>
-          <p className="text-white/50 text-[15px] sm:text-base leading-relaxed mb-8 max-w-sm">
-            {s.text}
-          </p>
-          <div className="flex items-center gap-5">
-            <Link href={s.cta.href} className="btn-accent">{s.cta.label}</Link>
-            <Link href="/shop" className="text-white/40 text-[12px] tracking-[0.2em] uppercase hover:text-white/70 transition-colors">
-              View All
-            </Link>
+          <Link
+            href={s.cta.href}
+            className="inline-flex items-center gap-3 text-white text-[13px] tracking-[0.2em] uppercase font-medium group"
+          >
+            {s.cta.label}
+            <span className="w-10 h-[1px] bg-white/50 group-hover:w-16 transition-all duration-500" />
+          </Link>
+        </div>
+
+        {/* Slide indicators */}
+        <div className="absolute bottom-8 right-6 sm:right-8 flex items-center gap-3">
+          <span className="text-white/40 text-[11px] font-medium tracking-wider">
+            {String(current + 1).padStart(2, "0")} / {String(slides.length).padStart(2, "0")}
+          </span>
+          <div className="flex gap-1.5">
+            {slides.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setCurrent(i)}
+                className={`h-[2px] rounded-full transition-all duration-700 cursor-pointer ${
+                  i === current ? "w-8 bg-white" : "w-3 bg-white/25"
+                }`}
+                aria-label={`Slide ${i + 1}`}
+              />
+            ))}
           </div>
         </div>
-      </div>
-
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex gap-2.5">
-        {slides.map((_, i) => (
-          <button key={i} onClick={() => setCurrent(i)} className={`h-[3px] rounded-full transition-all duration-500 cursor-pointer ${i === current ? "w-8 bg-white" : "w-4 bg-white/25"}`} aria-label={`Slide ${i + 1}`} />
-        ))}
       </div>
     </section>
   );

@@ -30,30 +30,46 @@ export default function FeaturedProducts({ title, subtitle, filter, limit = 4, v
     })) as unknown as Product[];
 
   return (
-    <section className="section-pad">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex items-end justify-between mb-8 sm:mb-10">
+    <section className="py-16 sm:py-20">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8">
+        {/* Header */}
+        <div className="flex items-end justify-between mb-10 sm:mb-14">
           <div>
             {subtitle && (
-              <p className="text-[11px] tracking-[0.3em] uppercase text-accent font-semibold mb-1.5">{subtitle}</p>
+              <p className="text-[11px] tracking-[0.4em] uppercase text-accent font-semibold mb-2">{subtitle}</p>
             )}
-            <h2 className="text-[clamp(1.4rem,3vw,2rem)] font-light" style={{ fontFamily: "var(--font-display)" }}>
+            <h2
+              className="text-[clamp(1.5rem,3.5vw,2.4rem)] font-light"
+              style={{ fontFamily: "var(--font-display)" }}
+            >
               {title}
             </h2>
           </div>
-          <Link href={viewAllHref} className="text-[12px] tracking-widest uppercase text-muted hover:text-foreground transition-colors hidden sm:block">
-            View All →
+          <Link
+            href={viewAllHref}
+            className="hidden sm:inline-flex items-center gap-3 text-muted-foreground text-[12px] tracking-[0.2em] uppercase font-medium group hover:text-foreground transition-colors"
+          >
+            View All
+            <span className="w-6 h-[1px] bg-current group-hover:w-10 transition-all duration-500" />
           </Link>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-3 gap-y-6 sm:gap-x-5 sm:gap-y-8">
+        {/* Products */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-10">
           {filtered.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>
 
-        <div className="mt-8 text-center sm:hidden">
-          <Link href={viewAllHref} className="btn-outline text-[11px]">View All</Link>
+        {/* Mobile CTA */}
+        <div className="mt-10 text-center sm:hidden">
+          <Link
+            href={viewAllHref}
+            className="inline-flex items-center gap-3 text-foreground text-[12px] tracking-[0.2em] uppercase font-semibold group"
+          >
+            View All
+            <span className="w-6 h-[1px] bg-foreground/30 group-hover:w-10 transition-all duration-500" />
+          </Link>
         </div>
       </div>
     </section>

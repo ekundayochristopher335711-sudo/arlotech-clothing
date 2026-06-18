@@ -1,42 +1,35 @@
 "use client";
 
 import HeroSection from "@/components/home/HeroSection";
-import CategoryGrid from "@/components/home/CategoryGrid";
+import BrandEthos from "@/components/home/BrandEthos";
+import EditorialCollections from "@/components/home/EditorialCollections";
 import FeaturedProducts from "@/components/home/FeaturedProducts";
-import PromoBanner from "@/components/home/PromoBanner";
+import CampaignBanner from "@/components/home/CampaignBanner";
 import Testimonials from "@/components/home/Testimonials";
-import BrandFeatures from "@/components/home/BrandFeatures";
 import InstagramFeed from "@/components/home/InstagramFeed";
 
 export default function HomePage() {
   return (
     <>
       <HeroSection />
-      <BrandFeatures />
-      <CategoryGrid />
+      <BrandEthos />
+      <EditorialCollections />
       <FeaturedProducts
-        title="Bestsellers"
-        subtitle="Most Loved"
-        filter="bestseller"
-        limit={4}
-        viewAllHref="/shop?filter=bestseller"
-      />
-      <PromoBanner />
-      <FeaturedProducts
-        title="New Arrivals"
-        subtitle="Just Dropped"
+        title="New Drops"
+        subtitle="Just Landed"
         filter="new"
         limit={4}
         viewAllHref="/shop?filter=new"
       />
-      <Testimonials />
+      <CampaignBanner />
       <FeaturedProducts
-        title="Editor's Picks"
-        subtitle="Curated Selection"
+        title="The Edit"
+        subtitle="Curated for You"
         filter="featured"
         limit={4}
         viewAllHref="/shop?filter=featured"
       />
+      <Testimonials />
       <InstagramFeed />
     </>
   );
