@@ -291,7 +291,7 @@ export const sampleProducts = [
     isBestseller: true,
     published: true,
     images: [
-      { id: "img-9a", url: "https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=800&q=80", alt: "Monolith Chelsea Boots", position: 0 },
+      { id: "img-9a", url: "https://images.unsplash.com/photo-1531310197839-ccf54634509e?w=800&q=80", alt: "Monolith Chelsea Boots", position: 0 },
       { id: "img-9b", url: "https://images.unsplash.com/photo-1605812860427-4024433a70fd?w=800&q=80", alt: "Monolith Chelsea Boots pair", position: 1 },
     ],
     variants: [
