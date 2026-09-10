@@ -65,8 +65,8 @@ export const sampleProducts = [
     isBestseller: true,
     published: true,
     images: [
-      { id: "img-1a", url: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80", alt: "Noir Tailored Blazer front", position: 0 },
-      { id: "img-1b", url: "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=800&q=80", alt: "Noir Tailored Blazer detail", position: 1 },
+      { id: "img-1a", url: "https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?w=800&q=80", alt: "Noir Tailored Blazer front", position: 0 },
+      { id: "img-1b", url: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800&q=80", alt: "Noir Tailored Blazer detail", position: 1 },
     ],
     variants: [
       { id: "var-1a", size: "S", color: "Black", colorHex: "#000000", stock: 12, sku: "ARL-BLZ-001-S" },
@@ -94,8 +94,8 @@ export const sampleProducts = [
     isBestseller: false,
     published: true,
     images: [
-      { id: "img-2a", url: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800&q=80", alt: "Ivory Silk Wrap Dress", position: 0 },
-      { id: "img-2b", url: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=800&q=80", alt: "Ivory Silk Wrap Dress styled", position: 1 },
+      { id: "img-2a", url: "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=800&q=80", alt: "Ivory Silk Wrap Dress", position: 0 },
+      { id: "img-2b", url: "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?w=800&q=80", alt: "Ivory Silk Wrap Dress styled", position: 1 },
     ],
     variants: [
       { id: "var-2a", size: "XS", color: "Ivory", colorHex: "#FFFFF0", stock: 6, sku: "ARL-DRS-002-XS" },
@@ -150,8 +150,8 @@ export const sampleProducts = [
     isBestseller: true,
     published: true,
     images: [
-      { id: "img-4a", url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&q=80", alt: "Atlas Runner Sneakers", position: 0 },
-      { id: "img-4b", url: "https://images.unsplash.com/photo-1556048219-bb6978360b84?w=800&q=80", alt: "Atlas Runner Sneakers side", position: 1 },
+      { id: "img-4a", url: "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=800&q=80", alt: "Atlas Runner Sneakers", position: 0 },
+      { id: "img-4b", url: "https://images.unsplash.com/photo-1512374382149-233c42b6a83b?w=800&q=80", alt: "Atlas Runner Sneakers side", position: 1 },
     ],
     variants: [
       { id: "var-4a", size: "8", color: "Off-White", colorHex: "#FAF0E6", stock: 20, sku: "ARL-SNK-004-8" },
@@ -179,8 +179,8 @@ export const sampleProducts = [
     isBestseller: false,
     published: true,
     images: [
-      { id: "img-5a", url: "https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=800&q=80", alt: "Obsidian Overcoat", position: 0 },
-      { id: "img-5b", url: "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=800&q=80", alt: "Obsidian Overcoat back", position: 1 },
+      { id: "img-5a", url: "https://images.unsplash.com/photo-1548126032-079a0fb0099d?w=800&q=80", alt: "Obsidian Overcoat", position: 0 },
+      { id: "img-5b", url: "https://images.unsplash.com/photo-1618886614638-80e3c103d31a?w=800&q=80", alt: "Obsidian Overcoat back", position: 1 },
     ],
     variants: [
       { id: "var-5a", size: "S", color: "Charcoal", colorHex: "#36454F", stock: 5, sku: "ARL-COT-005-S" },
@@ -206,7 +206,7 @@ export const sampleProducts = [
     published: true,
     images: [
       { id: "img-6a", url: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800&q=80", alt: "Muse Cropped Hoodie", position: 0 },
-      { id: "img-6b", url: "https://images.unsplash.com/photo-1578768079470-0a4536cc7f33?w=800&q=80", alt: "Muse Cropped Hoodie back", position: 1 },
+      { id: "img-6b", url: "https://images.unsplash.com/photo-1550246140-29f40b909e5a?w=800&q=80", alt: "Muse Cropped Hoodie street style", position: 1 },
     ],
     variants: [
       { id: "var-6a", size: "S", color: "Washed Black", colorHex: "#2C2C2C", stock: 30, sku: "ARL-HDY-006-S-BLK" },
@@ -235,7 +235,7 @@ export const sampleProducts = [
     isBestseller: true,
     published: true,
     images: [
-      { id: "img-7a", url: "https://images.unsplash.com/photo-1625910513413-5fc421e0a7dc?w=800&q=80", alt: "Crescent Knit Polo", position: 0 },
+      { id: "img-7a", url: "https://images.unsplash.com/photo-1523380744952-b7e00e6e2ffa?w=800&q=80", alt: "Crescent Knit Polo", position: 0 },
       { id: "img-7b", url: "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?w=800&q=80", alt: "Crescent Knit Polo styled", position: 1 },
     ],
     variants: [
@@ -266,8 +266,8 @@ export const sampleProducts = [
     isBestseller: false,
     published: true,
     images: [
-      { id: "img-8a", url: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=800&q=80", alt: "Velvet Evening Clutch", position: 0 },
-      { id: "img-8b", url: "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?w=800&q=80", alt: "Velvet Evening Clutch open", position: 1 },
+      { id: "img-8a", url: "https://images.unsplash.com/photo-1575032617751-6ddec2089882?w=800&q=80", alt: "Velvet Evening Clutch", position: 0 },
+      { id: "img-8b", url: "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?w=800&q=80", alt: "Velvet Evening Clutch open", position: 1 },
     ],
     variants: [
       { id: "var-8a", color: "Burgundy", colorHex: "#800020", stock: 15, sku: "ARL-CLT-008-BRG" },
@@ -291,7 +291,7 @@ export const sampleProducts = [
     isBestseller: true,
     published: true,
     images: [
-      { id: "img-9a", url: "https://images.unsplash.com/photo-1638247025967-b4e38f787b76?w=800&q=80", alt: "Monolith Chelsea Boots", position: 0 },
+      { id: "img-9a", url: "https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=800&q=80", alt: "Monolith Chelsea Boots", position: 0 },
       { id: "img-9b", url: "https://images.unsplash.com/photo-1605812860427-4024433a70fd?w=800&q=80", alt: "Monolith Chelsea Boots pair", position: 1 },
     ],
     variants: [
@@ -319,7 +319,7 @@ export const sampleProducts = [
     isBestseller: false,
     published: true,
     images: [
-      { id: "img-10a", url: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=800&q=80", alt: "Sovereign Linen Shirt", position: 0 },
+      { id: "img-10a", url: "https://images.unsplash.com/photo-1561053720-76cd73ff22c3?w=800&q=80", alt: "Sovereign Linen Shirt", position: 0 },
       { id: "img-10b", url: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=800&q=80", alt: "Sovereign Linen Shirt back", position: 1 },
     ],
     variants: [
@@ -349,8 +349,8 @@ export const sampleProducts = [
     isBestseller: true,
     published: true,
     images: [
-      { id: "img-11a", url: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=800&q=80", alt: "Aura Cashmere Sweater", position: 0 },
-      { id: "img-11b", url: "https://images.unsplash.com/photo-1434389677669-e08b4cda3a22?w=800&q=80", alt: "Aura Cashmere Sweater detail", position: 1 },
+      { id: "img-11a", url: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=800&q=80", alt: "Aura Cashmere Sweater", position: 0 },
+      { id: "img-11b", url: "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=800&q=80", alt: "Aura Cashmere Sweater detail", position: 1 },
     ],
     variants: [
       { id: "var-11a", size: "XS", color: "Oatmeal", colorHex: "#C8AD7F", stock: 8, sku: "ARL-SWT-011-XS" },
@@ -377,8 +377,8 @@ export const sampleProducts = [
     isBestseller: false,
     published: true,
     images: [
-      { id: "img-12a", url: "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&q=80", alt: "Drift Cargo Trousers", position: 0 },
-      { id: "img-12b", url: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=800&q=80", alt: "Drift Cargo Trousers styled", position: 1 },
+      { id: "img-12a", url: "https://images.unsplash.com/photo-1552902865-b72c031ac5ea?w=800&q=80", alt: "Drift Cargo Trousers", position: 0 },
+      { id: "img-12b", url: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=800&q=80", alt: "Drift Cargo Trousers styled", position: 1 },
     ],
     variants: [
       { id: "var-12a", size: "S", color: "Olive", colorHex: "#808000", stock: 18, sku: "ARL-TRS-012-S-OLV" },
