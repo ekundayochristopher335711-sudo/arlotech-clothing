@@ -15,7 +15,7 @@ export default function InstagramFeed() {
   return (
     <section className="py-16 sm:py-20">
       <div className="text-center mb-10">
-        <p className="text-[#F5C518] text-[10px] tracking-[0.4em] uppercase font-bold mb-1">@arlotechclothing</p>
+        <p className="text-[#F5C518] text-[10px] tracking-[0.4em] uppercase font-bold mb-1">@itanclothing</p>
         <h2 className="text-[clamp(1.3rem,3vw,1.8rem)] font-bold uppercase tracking-tight" style={{ fontFamily: "var(--font-display)" }}>
           Join the Movement
         </h2>

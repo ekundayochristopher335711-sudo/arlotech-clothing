@@ -24,7 +24,7 @@ export function formatPrice(price: number, currency: string = "USD"): string {
 export function generateOrderNumber(): string {
   const timestamp = Date.now().toString(36).toUpperCase();
   const random = Math.random().toString(36).substring(2, 6).toUpperCase();
-  return `ARL-${timestamp}-${random}`;
+  return `ITN-${timestamp}-${random}`;
 }
 
 export function slugify(text: string): string {

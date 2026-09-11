@@ -34,7 +34,7 @@ export const useCurrencyStore = create<CurrencyStore>()(
       },
     }),
     {
-      name: "arlotech-currency",
+      name: "itan-currency",
       partialize: (state) => ({ current: state.current }),
     }
   )

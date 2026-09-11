@@ -17,17 +17,17 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: {
-    default: "Arlotech Clothing | Fashion Without Limits",
-    template: "%s | Arlotech Clothing",
+    default: "Itan Clothing | Fashion Without Limits",
+    template: "%s | Itan Clothing",
   },
   description:
     "Premium streetwear brand from Lagos, Nigeria. Bold designs influenced by Afrobeats, street culture, and the energy of the city. Shop worldwide.",
-  keywords: ["streetwear", "Nigerian fashion", "Lagos", "Arlotech", "clothing brand", "Afrobeats fashion"],
+  keywords: ["streetwear", "Nigerian fashion", "Lagos", "Itan", "clothing brand", "Afrobeats fashion"],
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "Arlotech Clothing",
-    title: "Arlotech Clothing | Fashion Without Limits",
+    siteName: "Itan Clothing",
+    title: "Itan Clothing | Fashion Without Limits",
     description: "Premium streetwear brand from Lagos, Nigeria.",
   },
   robots: { index: true, follow: true },

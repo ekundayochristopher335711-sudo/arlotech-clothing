@@ -11,7 +11,7 @@ export default function AboutBrand() {
           <div className="relative aspect-[4/5] overflow-hidden bg-[#111]">
             <Image
               src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=1000&q=85"
-              alt="About Arlotech"
+              alt="About Itan"
               fill
               className="object-cover"
               sizes="(max-width:1024px) 100vw, 50vw"
@@ -29,13 +29,13 @@ export default function AboutBrand() {
             </h2>
             <div className="space-y-4 text-white/40 text-[14px] leading-relaxed">
               <p>
-                Arlotech Clothing started with a simple belief — that Nigerian streetwear can stand toe-to-toe with any brand in the world. No compromise on quality, no following trends. We create for people who move different.
+                Itan Clothing started with a simple belief — that Nigerian streetwear can stand toe-to-toe with any brand in the world. No compromise on quality, no following trends. We create for people who move different.
               </p>
               <p>
                 Our designs are influenced by Afrobeats, Hip Hop, and the raw energy of Lagos street culture. Every piece is crafted with premium materials and bold graphics that tell a story.
               </p>
               <p>
-                From a small room in Lagos to shipping worldwide — we&apos;re just getting started. The goal is simple: Wear Arlotech Everywhere.
+                From a small room in Lagos to shipping worldwide — we&apos;re just getting started. The goal is simple: Wear Itan Everywhere.
               </p>
             </div>
 

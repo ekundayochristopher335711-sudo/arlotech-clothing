@@ -21,7 +21,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
       <aside className={`fixed lg:static inset-y-0 left-0 z-50 w-[260px] bg-[#1A1714] text-white transform transition-transform lg:translate-x-0 ${sidebarOpen ? "translate-x-0" : "-translate-x-full"}`}>
         <div className="p-6 border-b border-white/10">
           <Link href="/admin" className="flex items-center gap-3">
-            <span className="text-lg tracking-[0.15em] uppercase"><span className="font-semibold">Arlo</span><span className="text-accent-light">tech</span></span>
+            <span className="text-lg tracking-[0.15em] uppercase"><span className="font-semibold">It</span><span className="text-accent-light">an</span></span>
           </Link>
           <p className="text-[10px] text-white/40 tracking-widest uppercase mt-1">Admin Panel</p>
         </div>

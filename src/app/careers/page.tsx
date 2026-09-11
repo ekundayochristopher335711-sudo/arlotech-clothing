@@ -29,7 +29,7 @@ export default function CareersPage() {
         <section className="glass-card rounded-3xl p-8">
           <h2 className="text-xl font-semibold mb-3">Connect</h2>
           <p className="text-sm text-muted-light leading-7">
-            Send your resume and portfolio to careers@arlotechclothing.com.
+            Send your resume and portfolio to careers@itanclothing.com.
           </p>
         </section>
       </div>

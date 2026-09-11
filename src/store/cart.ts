@@ -83,7 +83,7 @@ export const useCartStore = create<CartStore>()(
         }, 0),
     }),
     {
-      name: "arlotech-cart",
+      name: "itan-cart",
       partialize: (state) => ({ items: state.items }),
     }
   )

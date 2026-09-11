@@ -3,7 +3,7 @@
 import toast from "react-hot-toast";
 
 const coupons = [
-  { id: "1", code: "ARLOTECH10", type: "percentage", value: 10, minPurchase: 50, maxUses: 500, used: 127, active: true, expires: "2026-12-31" },
+  { id: "1", code: "ITAN10", type: "percentage", value: 10, minPurchase: 50, maxUses: 500, used: 127, active: true, expires: "2026-12-31" },
   { id: "2", code: "WELCOME20", type: "percentage", value: 20, minPurchase: 100, maxUses: 1000, used: 342, active: true, expires: "2026-09-30" },
   { id: "3", code: "FLAT50", type: "fixed", value: 50, minPurchase: 200, maxUses: 200, used: 89, active: true, expires: "2026-08-31" },
   { id: "4", code: "SUMMER15", type: "percentage", value: 15, minPurchase: 75, maxUses: 300, used: 300, active: false, expires: "2026-06-30" },

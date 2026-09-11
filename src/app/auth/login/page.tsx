@@ -60,7 +60,7 @@ export default function LoginPage() {
 
         <div className="mt-8 p-4 glass-card rounded-lg">
           <p className="text-[11px] tracking-widest uppercase text-muted font-semibold mb-2">Demo Credentials</p>
-          <p className="text-xs text-muted">Admin: admin@arlotech.com / admin123<br/>Customer: customer@arlotech.com / customer123</p>
+          <p className="text-xs text-muted">Admin: admin@itan.com / admin123<br/>Customer: customer@itan.com / customer123</p>
         </div>
       </div>
     </div>

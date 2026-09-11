@@ -12,7 +12,7 @@ export default function AboutPage() {
         <div className="relative z-10 text-center px-6">
           <p className="text-[#F5C518] text-[10px] tracking-[0.5em] uppercase font-bold mb-4">Our Story</p>
           <h1 className="text-white text-[clamp(2.5rem,8vw,5rem)] font-black uppercase leading-[0.9] tracking-tight" style={{ fontFamily: "var(--font-display)" }}>
-            About<br/>Arlotech
+            About<br/>Itan
           </h1>
         </div>
       </section>
@@ -27,13 +27,13 @@ export default function AboutPage() {
                 Born in Lagos.<br/>Built for the Streets.
               </h2>
               <div className="space-y-4 text-white/40 text-[15px] leading-relaxed">
-                <p>Arlotech Clothing started with a simple belief — that Nigerian streetwear can stand toe-to-toe with any brand in the world. No compromise on quality, no following trends. We create for people who move different.</p>
+                <p>Itan Clothing started with a simple belief — that Nigerian streetwear can stand toe-to-toe with any brand in the world. No compromise on quality, no following trends. We create for people who move different.</p>
                 <p>Our designs are influenced by Afrobeats, Hip Hop, and the raw energy of Lagos street culture. Every piece is crafted with premium materials and bold graphics that tell a story.</p>
-                <p>From a small room in Lagos to shipping worldwide — we&apos;re just getting started. The goal is simple: <span className="text-[#F5C518] font-semibold">Wear Arlotech Everywhere.</span></p>
+                <p>From a small room in Lagos to shipping worldwide — we&apos;re just getting started. The goal is simple: <span className="text-[#F5C518] font-semibold">Wear Itan Everywhere.</span></p>
               </div>
             </div>
             <div className="relative aspect-[4/5] overflow-hidden bg-[#111]">
-              <Image src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?w=1000&q=85" alt="Arlotech Brand" fill className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" />
+              <Image src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?w=1000&q=85" alt="Itan Brand" fill className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" />
             </div>
           </div>
         </div>

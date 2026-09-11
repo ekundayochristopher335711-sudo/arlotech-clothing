@@ -12,9 +12,9 @@ const menuItems = [
 ];
 
 const recentOrders = [
-  { id: "ARL-M3KF7-A2BX", date: "Jun 12, 2026", total: 485, status: "Delivered", items: 2 },
-  { id: "ARL-K9LP2-X4CW", date: "May 28, 2026", total: 320, status: "Shipped", items: 1 },
-  { id: "ARL-R7NQ4-D8FZ", date: "May 15, 2026", total: 710, status: "Processing", items: 3 },
+  { id: "ITN-M3KF7-A2BX", date: "Jun 12, 2026", total: 485, status: "Delivered", items: 2 },
+  { id: "ITN-K9LP2-X4CW", date: "May 28, 2026", total: 320, status: "Shipped", items: 1 },
+  { id: "ITN-R7NQ4-D8FZ", date: "May 15, 2026", total: 710, status: "Processing", items: 3 },
 ];
 
 export default function AccountPage() {

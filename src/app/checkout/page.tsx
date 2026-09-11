@@ -51,7 +51,7 @@ export default function CheckoutPage() {
         </div>
         <h1 className="text-3xl font-light mb-3" style={{ fontFamily: "var(--font-display)" }}>Order Confirmed</h1>
         <p className="text-muted text-sm mb-2">Thank you for your order! We&apos;ve sent a confirmation to your email.</p>
-        <p className="text-sm font-medium mb-8">Order #ARL-{Date.now().toString(36).toUpperCase()}</p>
+        <p className="text-sm font-medium mb-8">Order #ITN-{Date.now().toString(36).toUpperCase()}</p>
         <div className="flex gap-3 justify-center">
           <Link href="/account/orders" className="btn-outline">Track Order</Link>
           <Link href="/shop" className="btn-primary">Continue Shopping</Link>
@@ -64,7 +64,7 @@ export default function CheckoutPage() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10">
       <div className="text-center mb-10">
         <Link href="/" className="inline-block mb-6">
-          <span className="text-2xl tracking-[0.2em] uppercase font-light"><span className="font-semibold">Arlo</span>tech</span>
+          <span className="text-2xl tracking-[0.2em] uppercase font-light"><span className="font-semibold">It</span>an</span>
         </Link>
         <div className="flex items-center justify-center gap-2 text-[11px] tracking-widest uppercase">
           {(["information", "shipping", "payment"] as Step[]).map((s, i) => (

@@ -96,9 +96,9 @@ export default function CartPage() {
 
             <div className="mt-6 flex gap-2">
               <input type="text" value={couponCode} onChange={(e) => setCouponCode(e.target.value)} placeholder="Discount code" className="input-field flex-1 text-sm" />
-              <button onClick={() => { if (couponCode.toUpperCase() === "ARLOTECH10") setCouponApplied(true); }} className="px-4 py-3 bg-foreground text-white text-[11px] tracking-wider uppercase font-semibold rounded-lg hover:bg-primary-hover transition-colors cursor-pointer">Apply</button>
+              <button onClick={() => { if (couponCode.toUpperCase() === "ITAN10") setCouponApplied(true); }} className="px-4 py-3 bg-foreground text-white text-[11px] tracking-wider uppercase font-semibold rounded-lg hover:bg-primary-hover transition-colors cursor-pointer">Apply</button>
             </div>
-            {couponApplied && <p className="text-xs text-success mt-2">Code ARLOTECH10 applied — 10% off!</p>}
+            {couponApplied && <p className="text-xs text-success mt-2">Code ITAN10 applied — 10% off!</p>}
 
             <Link href="/checkout" className="btn-accent w-full text-center block mt-6">Proceed to Checkout</Link>
             <p className="text-[11px] text-muted text-center mt-3">Shipping and taxes calculated at checkout</p>

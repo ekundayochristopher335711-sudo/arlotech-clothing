@@ -10,11 +10,11 @@ const stats = [
 ];
 
 const recentOrders = [
-  { id: "ARL-M3KF7", customer: "Adaeze Okonkwo", total: 485, status: "Delivered", date: "Jun 12" },
-  { id: "ARL-K9LP2", customer: "Tunde Adeyemi", total: 320, status: "Shipped", date: "Jun 11" },
-  { id: "ARL-R7NQ4", customer: "Chioma Eze", total: 710, status: "Processing", date: "Jun 10" },
-  { id: "ARL-P2MT8", customer: "Marcus Chen", total: 165, status: "Pending", date: "Jun 10" },
-  { id: "ARL-V5XH3", customer: "Sarah Mitchell", total: 895, status: "Delivered", date: "Jun 9" },
+  { id: "ITN-M3KF7", customer: "Adaeze Okonkwo", total: 485, status: "Delivered", date: "Jun 12" },
+  { id: "ITN-K9LP2", customer: "Tunde Adeyemi", total: 320, status: "Shipped", date: "Jun 11" },
+  { id: "ITN-R7NQ4", customer: "Chioma Eze", total: 710, status: "Processing", date: "Jun 10" },
+  { id: "ITN-P2MT8", customer: "Marcus Chen", total: 165, status: "Pending", date: "Jun 10" },
+  { id: "ITN-V5XH3", customer: "Sarah Mitchell", total: 895, status: "Delivered", date: "Jun 9" },
 ];
 
 const topProducts = [

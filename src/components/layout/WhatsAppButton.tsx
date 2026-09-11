@@ -5,7 +5,7 @@ import { useState } from "react";
 export default function WhatsAppButton() {
   const [hovered, setHovered] = useState(false);
   const phone = "2348166419332";
-  const message = encodeURIComponent("Hi Arlotech! I'd like to know more about your collection.");
+  const message = encodeURIComponent("Hi Itan! I'd like to know more about your collection.");
 
   return (
     <a

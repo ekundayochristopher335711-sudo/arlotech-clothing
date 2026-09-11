@@ -27,7 +27,7 @@ export default function RegisterPage() {
       <div className="w-full max-w-md">
         <div className="text-center mb-10">
           <h1 className="text-3xl font-light mb-2" style={{ fontFamily: "var(--font-display)" }}>Create Account</h1>
-          <p className="text-sm text-muted">Join the Arlotech community for exclusive access and faster checkout.</p>
+          <p className="text-sm text-muted">Join the Itan community for exclusive access and faster checkout.</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-5">

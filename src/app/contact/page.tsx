@@ -31,7 +31,7 @@ export default function ContactPage() {
               <div className="space-y-6 text-[14px]">
                 <div>
                   <p className="text-[#F5C518] text-[10px] tracking-[0.3em] uppercase font-bold mb-1">Email</p>
-                  <p className="text-white/50">support@arlotechclothing.com</p>
+                  <p className="text-white/50">support@itanclothing.com</p>
                 </div>
                 <div>
                   <p className="text-[#F5C518] text-[10px] tracking-[0.3em] uppercase font-bold mb-1">WhatsApp</p>

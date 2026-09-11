@@ -23,13 +23,13 @@ export default function PressPage() {
         <section className="glass-card rounded-3xl p-8">
           <h2 className="text-xl font-semibold mb-3">Story</h2>
           <p className="text-sm text-muted-light leading-7">
-            Learn more about the vision, craft, and inspirations behind Arlotech Clothing.
+            Learn more about the vision, craft, and inspirations behind Itan Clothing.
           </p>
         </section>
         <section className="glass-card rounded-3xl p-8">
           <h2 className="text-xl font-semibold mb-3">Contact</h2>
           <p className="text-sm text-muted-light leading-7">
-            Email press@arlotechclothing.com for media access, interview requests, and coverage opportunities.
+            Email press@itanclothing.com for media access, interview requests, and coverage opportunities.
           </p>
         </section>
       </div>

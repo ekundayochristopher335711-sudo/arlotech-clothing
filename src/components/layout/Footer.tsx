@@ -38,7 +38,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-y-10 gap-x-8">
           <div className="col-span-2 sm:col-span-1">
             <Link href="/" className="inline-block mb-4">
-              <span className="text-[15px] tracking-[0.25em] uppercase font-black">ARLO<span className="text-[#F5C518]">TECH</span></span>
+              <span className="text-[15px] tracking-[0.25em] uppercase font-black">IT<span className="text-[#F5C518]">AN</span></span>
             </Link>
             <p className="text-[13px] text-white/25 leading-relaxed mb-5">Born in Lagos.<br/>Worn everywhere.</p>
             <div className="flex items-center gap-4">
@@ -82,7 +82,7 @@ export default function Footer() {
       {/* Copyright */}
       <div className="border-t border-[#1A1A1A]">
         <div className="max-w-screen-xl mx-auto px-6 sm:px-10 py-5 flex flex-col sm:flex-row items-center justify-between gap-2">
-          <p className="text-[11px] text-white/15">&copy; {new Date().getFullYear()} Arlotech Clothing. All rights reserved.</p>
+          <p className="text-[11px] text-white/15">&copy; {new Date().getFullYear()} Itan Clothing. All rights reserved.</p>
           <div className="flex gap-5 text-[11px] text-white/15">
             <Link href="/privacy" className="hover:text-white/40 transition-colors">Privacy</Link>
             <Link href="/terms" className="hover:text-white/40 transition-colors">Terms</Link>

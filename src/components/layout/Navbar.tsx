@@ -52,7 +52,7 @@ export default function Navbar() {
             {/* Center logo */}
             <Link href="/" className="absolute left-1/2 -translate-x-1/2">
               <span className="text-[18px] sm:text-[20px] tracking-[0.25em] uppercase font-black select-none text-white">
-                ARLO<span className="text-[#F5C518]">TECH</span>
+                IT<span className="text-[#F5C518]">AN</span>
               </span>
             </Link>
 

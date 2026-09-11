@@ -3,9 +3,9 @@
 import Link from "next/link";
 
 const orders = [
-  { id: "ARL-M3KF7-A2BX", date: "June 12, 2026", total: 485, status: "Delivered", items: [{ name: "Noir Tailored Blazer", size: "M", color: "Black", price: 485, qty: 1, image: "https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?w=200&q=80" }], tracking: "DHL-9182736450" },
-  { id: "ARL-K9LP2-X4CW", date: "May 28, 2026", total: 320, status: "Shipped", items: [{ name: "Heritage Leather Tote", size: null, color: "Cognac", price: 320, qty: 1, image: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=200&q=80" }], tracking: "FEDEX-5473829104" },
-  { id: "ARL-R7NQ4-D8FZ", date: "May 15, 2026", total: 710, status: "Processing", items: [{ name: "Aura Cashmere Sweater", size: "S", color: "Oatmeal", price: 420, qty: 1, image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=200&q=80" }, { name: "Crescent Knit Polo", size: "M", color: "Navy", price: 145, qty: 2, image: "https://images.unsplash.com/photo-1523380744952-b7e00e6e2ffa?w=200&q=80" }], tracking: null },
+  { id: "ITN-M3KF7-A2BX", date: "June 12, 2026", total: 485, status: "Delivered", items: [{ name: "Noir Tailored Blazer", size: "M", color: "Black", price: 485, qty: 1, image: "https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?w=200&q=80" }], tracking: "DHL-9182736450" },
+  { id: "ITN-K9LP2-X4CW", date: "May 28, 2026", total: 320, status: "Shipped", items: [{ name: "Heritage Leather Tote", size: null, color: "Cognac", price: 320, qty: 1, image: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=200&q=80" }], tracking: "FEDEX-5473829104" },
+  { id: "ITN-R7NQ4-D8FZ", date: "May 15, 2026", total: 710, status: "Processing", items: [{ name: "Aura Cashmere Sweater", size: "S", color: "Oatmeal", price: 420, qty: 1, image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=200&q=80" }, { name: "Crescent Knit Polo", size: "M", color: "Navy", price: 145, qty: 2, image: "https://images.unsplash.com/photo-1523380744952-b7e00e6e2ffa?w=200&q=80" }], tracking: null },
 ];
 
 const statusStyles: Record<string, string> = {

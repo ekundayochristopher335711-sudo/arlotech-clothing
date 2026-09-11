@@ -3,12 +3,12 @@
 import { useState } from "react";
 
 const orders = [
-  { id: "ARL-M3KF7-A2BX", customer: "Adaeze Okonkwo", email: "adaeze@example.com", items: 2, total: 485, status: "Delivered", payment: "Paid", date: "2026-06-12", method: "Paystack" },
-  { id: "ARL-K9LP2-X4CW", customer: "Tunde Adeyemi", email: "tunde@example.com", items: 1, total: 320, status: "Shipped", payment: "Paid", date: "2026-06-11", method: "Stripe" },
-  { id: "ARL-R7NQ4-D8FZ", customer: "Chioma Eze", email: "chioma@example.com", items: 3, total: 710, status: "Processing", payment: "Paid", date: "2026-06-10", method: "Paystack" },
-  { id: "ARL-P2MT8-G5KY", customer: "Marcus Chen", email: "marcus@example.com", items: 1, total: 165, status: "Pending", payment: "Pending", date: "2026-06-10", method: "Paystack" },
-  { id: "ARL-V5XH3-J7NR", customer: "Sarah Mitchell", email: "sarah@example.com", items: 4, total: 895, status: "Delivered", payment: "Paid", date: "2026-06-09", method: "Stripe" },
-  { id: "ARL-W8BT6-L3QP", customer: "Chidi Emeka", email: "chidi@example.com", items: 2, total: 540, status: "Cancelled", payment: "Refunded", date: "2026-06-08", method: "Paystack" },
+  { id: "ITN-M3KF7-A2BX", customer: "Adaeze Okonkwo", email: "adaeze@example.com", items: 2, total: 485, status: "Delivered", payment: "Paid", date: "2026-06-12", method: "Paystack" },
+  { id: "ITN-K9LP2-X4CW", customer: "Tunde Adeyemi", email: "tunde@example.com", items: 1, total: 320, status: "Shipped", payment: "Paid", date: "2026-06-11", method: "Stripe" },
+  { id: "ITN-R7NQ4-D8FZ", customer: "Chioma Eze", email: "chioma@example.com", items: 3, total: 710, status: "Processing", payment: "Paid", date: "2026-06-10", method: "Paystack" },
+  { id: "ITN-P2MT8-G5KY", customer: "Marcus Chen", email: "marcus@example.com", items: 1, total: 165, status: "Pending", payment: "Pending", date: "2026-06-10", method: "Paystack" },
+  { id: "ITN-V5XH3-J7NR", customer: "Sarah Mitchell", email: "sarah@example.com", items: 4, total: 895, status: "Delivered", payment: "Paid", date: "2026-06-09", method: "Stripe" },
+  { id: "ITN-W8BT6-L3QP", customer: "Chidi Emeka", email: "chidi@example.com", items: 2, total: 540, status: "Cancelled", payment: "Refunded", date: "2026-06-08", method: "Paystack" },
 ];
 
 const statusColors: Record<string, string> = { Delivered: "text-emerald-600 bg-emerald-50", Shipped: "text-blue-600 bg-blue-50", Processing: "text-amber-600 bg-amber-50", Pending: "text-gray-600 bg-gray-100", Cancelled: "text-red-600 bg-red-50" };
